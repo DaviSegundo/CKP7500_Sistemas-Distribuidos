@@ -1,0 +1,35 @@
+{
+  "name": "mqtt-sample",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./src/index.ts",
+  "author": "Jerry Macedo Castro <leom551@hotmail.com>",
+  "scripts": {
+    "sensor": "ts-node ./src/sensor/index.ts",
+    "cat": "ts-node ./src/cat/index.ts",
+    "alarms": "ts-node ./src/alarms/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "url": "^0.11.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
